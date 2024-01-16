@@ -1,0 +1,29 @@
+/* BASE */
+
+@import '/fonts/Gilroy/stylesheet.css';
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600);
+
+@import './base/animations';
+@import './base/mixins';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/navIcon';
+
+/* BASE */
+
+/* BLOCK */
+
+@import './blocks/header';
+@import './blocks/navList';
+@import './blocks/search';
+@import './blocks/interactiveDot';
+@import './blocks/select';
+
+
+
+
+
+
+/* BLOCK */

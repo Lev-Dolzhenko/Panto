@@ -1,0 +1,52 @@
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+}
+
+.nav__logo {
+    align-self: center;
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+    justify-self: center;
+}
+
+.nav__list__item {}
+
+.nav__list__link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav__bag {
+    position: relative;
+
+    align-self: center;
+    justify-self: end;
+}
+
+.nav__bag__img {}
+
+.nav__bag__counter {
+    position: absolute;
+    right: -6px;
+    top: 4px;
+
+    display: inline-block;
+    height: 25px;
+
+    background-color: $colorAccent;
+    border-radius: 25px;
+    
+    line-height: 25px;
+    padding: 0 6px;
+}

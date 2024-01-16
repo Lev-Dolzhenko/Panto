@@ -1,0 +1,58 @@
+.header__select {
+    background-image: url('/content/header/select.svg');
+    width: 112px;
+    height: 56px;
+
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: -26px;
+    transform: translate(-50%, -100%);
+    
+
+
+}
+
+.header__select__label {
+    
+    padding-top: 12px;
+}
+
+.header__select--check {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.header__select--check:checked + .header__select--color {
+    background-image: url('/content/header/check.svg');
+    background-position: center center;
+}
+.header__select--color {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: grey;
+    border: 2px solid $colorWhite;
+    border-radius: 50%;
+    box-shadow: (0px 4px 6px rgba(0, 0, 0, 0.10));
+
+    &--orange {
+        background-color: $colorAccentUI;
+    }
+
+    &--blue {
+        background-color: $colorBlueUI;
+    }
+
+    &--grey {
+        background-color: $colorGrayUI;
+    }
+}

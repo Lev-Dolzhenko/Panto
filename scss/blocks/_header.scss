@@ -1,0 +1,71 @@
+.header {
+    background-color: $colorBackground;
+    background-image: url('/content/header/background.jpg');
+    aspect-ratio: 1440/1084;
+    background-size: cover;
+
+    color: $colorWhite;
+
+    @include retinaBG(url('/content/header/background@2x.jpg'));
+
+    padding-top: 40px;
+
+    position: relative;
+}
+
+.header__nav__wrapper {
+    margin-bottom: 86px;
+}
+
+.header__content__subtitle__wrapper {
+    max-width: 606px;
+    margin-top: 14px;
+    margin: 0 auto;
+}
+
+.header__form__wrapper {
+    margin: 0 auto;
+
+}
+
+/* DOTS */
+
+// .info-dot {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: $colorWhite;
+// }
+
+.header__dot-sofa {
+    position: absolute;
+    left: calc(296 * 100% / 1440); // 113 * 100%/ 1084
+    top: calc(685 * 100% / 1074); // 753 * 100% / 1440
+
+    transform: translate(0%, 0%);
+    
+}
+
+
+.header__dot-vase {
+    position: absolute;
+    left: calc(113 * 100% / 1440); // 113 * 100%/ 1084
+    top: calc(753 * 100% / 1084); // 753 * 100% / 1440
+    
+    transform: translate(-50%, -50%);
+}
+
+.header__dot-figure {
+    position: absolute;
+    left: calc(810 * 100% / 1440); // 113 * 100%/ 1084
+    top: calc(787 * 100% / 1084); // 753 * 100% / 1440
+
+    transform: translate(-50%, -50%);
+    
+}
+
+.header__dot-pot {
+    position: absolute;
+    right: calc(46 * 100% / 1440); // 113 * 100%/ 1084
+    top: calc(821 * 100% / 1084); // 753 * 100% / 1440
+}
