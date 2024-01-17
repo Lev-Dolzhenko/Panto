@@ -1,0 +1,27 @@
+.products {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.products__title {
+    color: $colorText;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.products__tab {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.product__slider {
+    margin-bottom: 60px;
+    
+}
+
+.product__link {
+    text-align: center;
+}

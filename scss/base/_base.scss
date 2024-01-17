@@ -6,6 +6,7 @@ body {
 
 a {
     transition: color 0.2s linear;
+
     &:hover {
         // color: $colorAccent;
     }
@@ -48,4 +49,22 @@ a {
 
 }
 
+.link-more {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 13px;
 
+    color: $colorAccent !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 185%;
+
+    &::after {
+        content: url('/content/main/benefits/next.svg');
+        height: 24px;
+    }
+
+    &--large {
+        font-size: 18px;
+    }
+}

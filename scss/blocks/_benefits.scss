@@ -1,0 +1,37 @@
+.benefits {
+    padding: 120px 0;
+}
+
+.benefits__title {
+    color: $colorText;
+    font-size: 42px;
+    font-weight: 700;
+    max-width: 260px;
+
+    align-self: center;
+}
+
+.benefits__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefits__item {
+
+}
+
+.benefits__item__title {
+    color: $colorText;
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.benefits__item__text {
+    color: $colorText;
+    line-height: 185%;
+
+    margin-bottom: 14px;
+}
