@@ -27,5 +27,9 @@
     &--active {
         background-color: $colorWhite;
         font-weight: 500;
+
+        &:hover {
+            background-color: $colorWhite;
+        }
     }
 }

@@ -37,11 +37,15 @@
     margin: 45px auto 0;
 }
 
-.header__content__form__input {}
+.header__content__form__input {
+    flex-grow: 1;
+    padding-right: 10px;
+}
 
 .header__content__form__button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: $colorAccent;
+    flex-shrink: 0;
 }
