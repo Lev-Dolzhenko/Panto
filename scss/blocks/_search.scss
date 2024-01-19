@@ -6,15 +6,16 @@
 
 
 .header__content__title {
-    font-size: 80px;
+    font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
     font-weight: 700;
     line-height: 130%;
     letter-spacing: -0.8px;
     text-transform: capitalize;
+    text-wrap: balance;
 }
 
 .header__content__subtitle {
-    font-size: 24px;
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
     font-weight: 400;
     line-height: 160%;
     opacity: 0.8;
@@ -25,7 +26,7 @@
 .header__content__form {
     display: flex;
     height: 56px;
-    width: 344px;
+    max-width: 344px;
     padding: 8px 8px 8px 20px;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +35,11 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
 
-    margin: 45px auto 0;
+    margin: clamp(1rem, 0.482rem + 2.59vw, 2.813rem) auto 0;
+
+    input::placeholder {
+        color: $colorWhite;
+    }
 }
 
 .header__content__form__input {

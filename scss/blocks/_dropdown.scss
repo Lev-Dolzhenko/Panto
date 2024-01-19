@@ -1,0 +1,35 @@
+.nav__dropdown__list {
+    position: absolute;
+
+    opacity: 0;
+    pointer-events: none;
+
+    background-color: $colorBackground;
+    padding: 10px 30px 10px 15px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    // display: none;
+
+    transition: all 0.2s ease-in;
+
+}
+
+.nav__dropdown__list__item {
+
+    a {
+        &:hover {
+            color: $colorAccent
+        }
+    }
+}
+
+.nav__list__link--dropdown-li:hover .nav__dropdown__list {
+    opacity: 1;
+    // display: flex;
+    pointer-events: all;
+    // transform: translate(0, 10%);
+}

@@ -34,14 +34,24 @@ for (let selectChoice of selectChoices) {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 42,
   // loop: true,
   // freeMode: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1230: {
+      slidesPerView: 4,
+      spaceBetween: 50
+    },
   },
 
   // Navigation arrows
@@ -82,3 +92,16 @@ for (let tabsBtn of tabsBtns) {
   })
 }
 
+//nav mobile
+
+const closeNavBtn = document.getElementById('closeNav');
+const openNavBtn = document.getElementById('openNav');
+const mobileNav = document.getElementById('nav');
+
+openNavBtn.addEventListener('click', function() {
+  mobileNav.classList.remove('none');
+})
+
+closeNavBtn.addEventListener('click', function() {
+  mobileNav.classList.add('none');
+})

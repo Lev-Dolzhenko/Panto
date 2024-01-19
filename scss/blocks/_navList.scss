@@ -6,7 +6,7 @@
 .nav__logo {
     align-self: center;
 
-    font-size: 28px;
+    font-size: clamp(1rem, 0.786rem + 1.07vw, 1.75rem);
     font-weight: 700;
     letter-spacing: 0.28px;
     text-transform: capitalize;
@@ -18,13 +18,30 @@
     column-gap: 60px;
 
     justify-self: center;
+
+    @include mediaTablet {
+        display: none;
+    }
 }
 
-.nav__list__item {}
+.nav__list__item:first-child {}
 
 .nav__list__link {
     font-size: 18px;
     font-weight: 500;
+
+}
+
+.nav__list__link--dropdown:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    &::after {
+        content: url('/content/header/arrow.svg');
+        height: 16px;
+    }
 }
 
 .nav__bag {
@@ -32,13 +49,18 @@
 
     align-self: center;
     justify-self: end;
+
 }
 
-.nav__bag__img {}
+.nav__bag__img {
+    width: 25px;
+        // width: clamp(1.375rem, 1.196rem + 0.89vw, 2rem);
+
+}
 
 .nav__bag__counter {
     position: absolute;
-    right: -6px;
+    right: -8px;
     top: 4px;
 
     display: inline-block;
@@ -46,7 +68,21 @@
 
     background-color: $colorAccent;
     border-radius: 25px;
-    
+
     line-height: 25px;
     padding: 0 6px;
+}
+
+.nav__button__open {
+    display: none;
+    // width: clamp(1.375rem, 1.196rem + 0.89vw, 2rem);
+
+    img {
+        width: 25px;
+        // width: clamp(1.375rem, 1.196rem + 0.89vw, 2rem);
+    }
+
+    @include mediaTablet {
+        display: block;
+    }
 }

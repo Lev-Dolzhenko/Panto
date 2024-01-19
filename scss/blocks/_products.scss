@@ -19,7 +19,10 @@
 
 .product__slider {
     margin-bottom: 60px;
-    
+
+    @include mediaPhone {
+        padding: 0 30px;
+    }
 }
 
 .product__link {

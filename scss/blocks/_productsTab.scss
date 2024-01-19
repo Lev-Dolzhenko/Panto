@@ -3,6 +3,10 @@
     padding: 6px;
     border-radius: 44px;
     background: #EEE;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 402px;
 }
 
 .tab__controls__button {

@@ -8,13 +8,19 @@
 
     @include retinaBG(url('/content/header/background@2x.jpg'));
 
-    padding-top: 40px;
+    padding-top: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
 
     position: relative;
+
+    @media screen and (max-width: 416px) {
+        height: 336px;
+        aspect-ratio: unset;
+        background-position: center;
+    }
 }
 
 .header__nav__wrapper {
-    margin-bottom: 86px;
+    margin-bottom: clamp(1.25rem, 0.071rem + 5.89vw, 5.375rem)
 }
 
 .header__content__subtitle__wrapper {
@@ -30,12 +36,12 @@
 
 /* DOTS */
 
-// .info-dot {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 50%;
-//     background-color: $colorWhite;
-// }
+.header__dot {
+    @include mediaTablet--small {
+        display: none;
+    }
+}
+
 
 .header__dot-sofa {
     position: absolute;
@@ -43,7 +49,7 @@
     top: calc(685 * 100% / 1074); // 753 * 100% / 1440
 
     transform: translate(0%, 0%);
-    
+
 }
 
 
@@ -51,7 +57,7 @@
     position: absolute;
     left: calc(113 * 100% / 1440); // 113 * 100%/ 1084
     top: calc(753 * 100% / 1084); // 753 * 100% / 1440
-    
+
     transform: translate(-50%, -50%);
 }
 
@@ -61,7 +67,7 @@
     top: calc(787 * 100% / 1084); // 753 * 100% / 1440
 
     transform: translate(-50%, -50%);
-    
+
 }
 
 .header__dot-pot {

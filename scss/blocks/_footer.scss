@@ -1,5 +1,5 @@
 .footer {
-    padding: 118px 0 58px;
+    padding: clamp(3.125rem, 1.911rem + 6.07vw, 7.375rem) 0 58px;
     background-color: $colorBackground;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -8,7 +8,12 @@
     display: grid;
     grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
 
-    margin-bottom: 118px;
+    margin-bottom: clamp(3.125rem, 1.911rem + 6.07vw, 7.375rem);
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
 }
 
 .footer___grid__logo {
@@ -23,12 +28,16 @@
         font-weight: 500;
         line-height: 160%;
         color: rgba(255, 255, 255, 0.8);
-        margin-top: 29px;
+        margin-top: clamp(0.625rem, 0.286rem + 1.7vw, 1.813rem);
     }
 }
 
 .footer__grid__services {
     grid-column-start: 3;
+
+    @include mediaTablet {
+        grid-column-start: auto;
+    }
 }
 
 .footer__grid__furniture {}
@@ -51,6 +60,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mediaTablet--small {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        row-gap: 15px;    
+    }
 }
 
 .footer__row__copyright {}

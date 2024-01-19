@@ -6,22 +6,22 @@
     }
 }
 
-// @mixin mediaTablet {
-//     @media screen and (max-width: $tablet) {
-//         @content
-//     }
-// }
+@mixin mediaPhone {
+    @media screen and (max-width: $phone) {
+        @content
+    }
+}
 
 
-// @mixin semiTablet {
-//     @media screen and (max-width: $semiTablet) {
-//         @content
-//     }
-// }
+@mixin mediaTablet--small {
+    @media screen and (max-width: $tablet--small) {
+        @content
+    }
+}
 
-// @mixin mediaPhone {
-//     @media screen and (max-width: $phone) {
-//         @content
-//     }
-// }
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content
+    }
+}
 

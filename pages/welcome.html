@@ -12,14 +12,22 @@
 </head>
 
 <body>
-    <header class="header none">
+    <header class="header">
         <div class="container">
             <div class="header__nav__wrapper">
                 <nav class="nav">
                     <a class="nav__logo" href="#!">Panto</a>
 
                     <ul class="nav__list">
-                        <li class="nav__list__item"><a class="nav__list__link" href="#!">Furniture</a></li>
+                        <li class="nav__list__item nav__list__link--dropdown-li">
+                            <a class="nav__list__link nav__list__link--dropdown" href="#!">Furniture</a>
+                            <ul class="nav__dropdown__list">
+                                <li class="nav__dropdown__list__item"><a href="#!">Beds</a></li>
+                                <li class="nav__dropdown__list__item"><a href="#!">Chairs</a></li>
+                                <li class="nav__dropdown__list__item"><a href="#!">Tables</a></li>
+                                <li class="nav__dropdown__list__item"><a href="#!">Lapms</a></li>
+                            </ul>
+                        </li>
                         <li class="nav__list__item"><a class="nav__list__link" href="#!">Shop</a></li>
                         <li class="nav__list__item"><a class="nav__list__link" href="#!">About Us</a></li>
                         <li class="nav__list__item"><a class="nav__list__link" href="#!">Contact</a></li>
@@ -29,6 +37,8 @@
                         <img class="nav__bag__img" src="./../content/header/bag.svg" alt="bag">
                         <div class="nav__bag__counter">0</div>
                     </a>
+
+                    <button class="nav__button__open"><img  id="openNav" src="/content/header/mobileNav.svg" alt=""></button>
                 </nav>
             </div>
 
@@ -42,14 +52,14 @@
                 </div>
                 <div class="header__form__wrapper">
                     <form action="" class="header__content__form">
-                        <input  placeholder="Search furniture" type="text" class="header__content__form__input">
+                        <input placeholder="Search furniture" type="text" class="header__content__form__input">
                         <button class="header__content__form__button"><img src="/content/header/search.svg"
                                 alt="search"></button>
                     </form>
                 </div>
             </div>
 
-            <div class="header__dot-sofa">
+            <div class="header__dot header__dot-sofa">
                 <button class="info-dot">
                     <div class="info-dot__point"></div>
                     <div class="info-dot__radius"></div>
@@ -73,7 +83,7 @@
 
             </div>
 
-            <div class="header__dot-vase">
+            <div class="header__dot header__dot-vase">
                 <button class="info-dot">
                     <div class="info-dot__point"></div>
                     <div class="info-dot__radius"></div>
@@ -95,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-figure">
+            <div class="header__dot header__dot-figure">
                 <button class="info-dot">
                     <div class="info-dot__point"></div>
                     <div class="info-dot__radius"></div>
@@ -117,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="header__dot-pot">
+            <div class="header__dot header__dot-pot">
                 <button class="info-dot">
                     <div class="info-dot__point"></div>
                     <div class="info-dot__radius"></div>
@@ -141,8 +151,33 @@
 
         </div>
     </header>
+    <div id="nav" class="mobile__nav__wrapper none">
+        <div class="mobile__row">
+            <a class="nav__bag" href="#!">
+                <img class="nav__bag__img" src="./../content/header/bag.svg" alt="bag">
+                <div class="nav__bag__counter nav__bag__counter--mobile">0</div>
+            </a>
+            <button id="closeNav"><img src="/content/header/mobileClose.svg" alt="close"></button>
+        </div>
+        <div class="mobile__nav">
+            <ul class="mobile__nav__list">
+                <li class="mobile__nav__item mobile__nav__link--dropdown-li">
+                    <a class="nav__list__link" href="#!">Furniture</a>
+                    <ul class="mobile__nav__dropdown__list">
+                        <li class="nav__dropdown__list__item"><a href="#!">Beds</a></li>
+                        <li class="nav__dropdown__list__item"><a href="#!">Chairs</a></li>
+                        <li class="nav__dropdown__list__item"><a href="#!">Tables</a></li>
+                        <li class="nav__dropdown__list__item"><a href="#!">Lapms</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#!">Shop</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#!">About Us</a></li>
+                <li class="nav__list__item"><a class="nav__list__link" href="#!">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <main class="main">
-        <section class="benefits none">
+        <section class="benefits">
             <div class="container">
                 <div class="benefits__row">
                     <h2 class="benefits__title">Why Choosing Us</h2>
@@ -172,7 +207,7 @@
                 </div>
             </div>
         </section>
-        <section class="products">
+        <section class="products ">
             <div class="container">
                 <div class="products__title">Best Selling Product</div>
                 <div class="products__tab">
@@ -577,7 +612,7 @@
         </section>
     </main>
 
-    <footer class="footer none">
+    <footer class="footer">
         <div class="container container--footer">
             <div class="footer__grid">
                 <div class="footer___grid__logo">
